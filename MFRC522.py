@@ -373,7 +373,7 @@ class MFRC522:
         else:
           print16Data.append(str(hex(backData[i]))[2:])
           print16DataReal.append(hex(backData[i]))
-      print "S "+str(sector)+ " B"+ str(block)+" "+ str(print16Data)
+      print "S"+str(sector)+ " B"+ str(block)+" "+ str(print16Data)
     return backData
   
   def MFRC522_Write(self, blockAddr, writeData):
